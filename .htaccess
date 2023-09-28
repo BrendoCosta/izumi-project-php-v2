@@ -1,0 +1,38 @@
+#RewriteCond %{HTTP_HOST} !^sub\.domain\.com [NC]
+#RewriteCond %{HTTP_HOST} !^sub2\.domain\.com [NC]
+#RewriteRule (.*) http://nodejs.izumiproject.com.br/$1 [R=301,L]
+<filesMatch ".(ico|jpg|jpeg|png|gif)$">
+    Header set Cache-Control "max-age=2592000, public"
+</filesMatch>
+<filesMatch ".(css|js)$">
+    Header set Cache-Control "max-age=86400, public"
+</filesMatch>
+# Custom default index page
+DirectoryIndex index.php
+#
+#<IfModule mod_rewrite.c>
+#    RewriteEngine On
+#    RewriteCond %{HTTPS} off
+#    RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
+#</IfModule>
+# Run Php without filename extension
+RewriteEngine On
+# Disable automatic directory detection
+DirectorySlash Off
+RewriteCond %{DOCUMENT_ROOT}/$1.php -f
+RewriteRule ^(.+?)/?$ /$1.php [L]
+# Return 404 if original request is .php
+RewriteCond %{THE_REQUEST} "^[^ ]* .*?\.php[? ].*$"
+RewriteRule .* - [L,R=404]
+RewriteEngine On
+RewriteRule ^posts/([^/]*)/([^/]*)/([^/]*)/?$ /posts.php?year=$1&month=$2&slug=$3 [L]
+RewriteRule ^sitemap\.xml$ sitemap.php [L]
+# PROIBE LISTAR DIRETORIOS
+Options -Indexes
+# ARQUIVOS DE ACESSO PROIBIDO
+<Files ".htaccess"> 
+    Require all denied
+</Files>
+<Files "global.php">  
+  Require all denied
+</Files>

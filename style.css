@@ -1,0 +1,1223 @@
+:root {
+
+  --logo: url("https://izumiproject.com.br/images/global/logo_small_white.png");
+  --logo-big: url("https://izumiproject.com.br/images/global/logo_big_white.png");
+  --icon-infoanime: url("https://izumiproject.com.br/images/global/icon_infoanime_white.png");
+  --icon-anidb: url("https://izumiproject.com.br/images/global/icon_anidb_white.png");
+
+  --wrapper:        #FFFFFF;
+  --container:      #F0F5F8;
+  --light:          #C0D2D3;
+  --main:           #007BFF;
+  --middle:         #A878EA;
+  --dark:           #F47CC3;
+  --link:           #A878EA;
+  --linkHover:      #F47CC3;
+  --linkVisited:    #A878EA;
+  --menuLink:       #FFFFFF;
+  --menuLinkHover:  #F47CC3;
+  --sectionTitle:   var(--middle);
+  --postSection:    var(--sectionTitle);
+  --postSplitter:   var(--sectionTitle);
+  --cardText:       #95A5A6;
+  --postText:       #757575;
+  --pagination: transparent;
+  --paginationActive: #F47CC3;
+  --paginationNotActive: #A878EA;
+  --paginationText: var(--main);
+  --paginationTextHover: white;
+
+  --socialButton:   #FFFFFF;
+  --facebook:       #007BFF;
+  --facebookHover:  #0069D9;
+  --twitter:        #45AAF2;
+  --twitterHover:   #3B90CE;
+  --linkedin:       #3867D6;
+  --linkedinHover:  #3058B6;
+  --whatsapp:       #26DE81;
+  --whatsappHover:  #20BD6E;
+  --reddit:         #FF4500;
+  --redditHover:    #D93B00;
+
+  /* rgba = Red, Green, Blue, Alpha (opacity) */
+
+  --shadow:         rgba(0, 0, 0, 0.05);
+  --outline:        rgba(168, 120, 234, 0.5); /* Note: Here I use the --middle color in RGBA */
+
+  --red: #EB3B5A;
+  --pink: #EA1E63;
+  --purple: #9C28AF;
+  --deepPurple: #673BB7;
+  --indigo: #3F51B5;
+  --blue: #2196F3;
+  --lightBlue: #03A9F3;
+  --cyan: #00BCD5;
+  --teal: #24CAA1;
+  --green: #4CAF52;
+  --lightGreen: #8BC24A;
+  --lime: #CCDD37;
+  --yellow: #FFEA3C;
+  --amber: #FFC006;
+  --orange: #FF9700;
+  --deepOrange: #FE5723;
+  --brown: #7A5545;
+  --grey: #9E9E9E;
+  --blueGrey: #607C87;
+  --black: #333333;
+  --white: #FFFFFF;
+
+  --izumi: #007BFF;
+  --hiiragi: #A878EA;
+  --takara: #F47CC3;
+  --nuvem: #F0F5F8;
+  --izumis: #024A91;
+}
+
+[data-theme="dark"] {
+
+  --logo: url("https://izumiproject.com.br/images/global/logo_small_dark.png");
+  --logo-big: url("https://izumiproject.com.br/images/global/logo_big_dark.png");
+  --icon-infoanime: url("https://izumiproject.com.br/images/global/icon_infoanime_dark.png");
+  --icon-anidb: url("https://izumiproject.com.br/images/global/icon_anidb_dark.png");
+
+  --izumi: #1B2A47;
+  --hiiragi: #152036;
+  --takara: #2E4760;
+  --nuvem: #1C2C49;
+  --izumis: #024A91;
+
+  --shadow:         rgba(0, 0, 0, 0.05);
+  --outline:        rgba(21, 46, 77, 0.5); /* Note: Here I use the --wrapper color in RGBA */
+
+  --wrapper:        #163151;
+  --container:      #142C49;
+  --light:          #6E84A3;
+  --main:           #1C3D66;
+  --middle:         #152E4D;
+  --dark:           #10243D;
+  --link:           #6E84A3;
+  --linkHover:      #FFFFFF;
+  --linkVisited:    #A878EA;
+  --menuLink:       #6E84A3;
+  --menuLinkHover:  #FFFFFF;
+  --sectionTitle:   #0E2035;
+  --postSection:    var(--menuLink);
+  --postSplitter:   var(--sectionTitle);
+  --cardText:       #6E84A3;
+  --postText:       #6E84A3;
+  --pagination:     transparent;
+  --paginationActive: var(--wrapper);
+  --paginationNotActive: var(--wrapper);
+  --paginationText: white;
+  --paginationTextHover: white;
+
+}
+@font-face {
+    font-family: 'Quicksand';
+    src: url('fonts/Quicksand-Regular.eot');
+    src: url('fonts/Quicksand-Regular.eot?#iefix') format('embedded-opentype'), url('fonts/Quicksand-Regular.woff2') format('woff2'), url('fonts/Quicksand-Regular.woff') format('woff'), url('fonts/Quicksand-Regular.ttf') format('truetype'), url('fonts/Quicksand-Regular.svg#Quicksand-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Quicksand';
+    src: url('fonts/Quicksand-Light.eot');
+    src: url('fonts/Quicksand-Light.eot?#iefix') format('embedded-opentype'), url('fonts/Quicksand-Light.woff2') format('woff2'), url('fonts/Quicksand-Light.woff') format('woff'), url('fonts/Quicksand-Light.ttf') format('truetype'), url('fonts/Quicksand-Light.svg#Quicksand-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Quicksand';
+    src: url('fonts/Quicksand-Medium.eot');
+    src: url('fonts/Quicksand-Medium.eot?#iefix') format('embedded-opentype'), url('fonts/Quicksand-Medium.woff2') format('woff2'), url('fonts/Quicksand-Medium.woff') format('woff'), url('fonts/Quicksand-Medium.ttf') format('truetype'), url('fonts/Quicksand-Medium.svg#Quicksand-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Quicksand';
+    src: url('fonts/Quicksand-Bold.eot');
+    src: url('fonts/Quicksand-Bold.eot?#iefix') format('embedded-opentype'), url('fonts/Quicksand-Bold.woff2') format('woff2'), url('fonts/Quicksand-Bold.woff') format('woff'), url('fonts/Quicksand-Bold.ttf') format('truetype'), url('fonts/Quicksand-Bold.svg#Quicksand-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('fonts/Ubuntu.eot');
+    src: local('fonts/Ubuntu'),
+        url('fonts/Ubuntu.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Ubuntu.woff2') format('woff2'),
+        url('fonts/Ubuntu.woff') format('woff'),
+        url('fonts/Ubuntu.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+* {
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    box-sizing: border-box;
+}
+body, html {
+  width: auto;
+  height: auto;
+}
+html {
+  overflow: auto;
+}
+body {
+  transform: none;
+  background: fixed linear-gradient(to bottom right, var(--main), var(--middle), var(--dark));
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.2vw;
+}
+a {
+  color: var(--link);
+  text-decoration: none;
+  transition: color 300ms ease;
+}
+a:hover {
+  color: var(--linkHover);
+}
+a:visited {
+  color: var(--linkVisited);
+}
+@font-face {
+  font-family: 'typicons';
+  src: url("fonts/typicons.eot");
+  src: url("fonts/typicons.eot?#iefix") format('embedded-opentype'),
+       url("fonts/typicons.woff") format('woff'),
+       url("fonts/typicons.ttf") format('truetype'),
+       url("fonts/typicons.svg#typicons") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+#logo {
+    position: relative;
+    border: none;
+    display: block;
+    width: 100%;
+    height: 1.4em;
+    float: none;
+    margin: 0 auto;
+    margin-top: 0.5em;
+    margin-bottom: 0.25em;
+    background-image: var(--logo);
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    transition: background-image 300ms ease;
+    font-size: 50px;
+}
+#logo:hover {
+  background-image: url("https://izumiproject.com.br/images/global/logo_small.png");
+}
+#wrapper {
+  height: auto;
+  display: flex;
+  overflow: hidden;
+  border-radius: 1em;
+  margin: 1em;
+  box-sizing: border-box;
+  border: none;
+  box-shadow: 0px 10px 16px rgba(0,0,0,0.2);
+}
+#header-wrapper {
+  position: relative;
+  overflow: visible;
+  float: left;
+  background: transparent;
+  width: 16%;
+  box-sizing: border-box;
+  min-height: 1px;
+}
+#header {
+  position: relative;
+  float: left;
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+  background: rgba(0,0,0,0.15);
+  width: 100%;
+  height: 100%;
+}
+#sideheader  {
+  width: 0;
+  position: fixed;
+  display: none;
+  z-index: 400;
+  height: auto;
+  top: 0;
+  left: 0;
+  border: none;
+  background: fixed linear-gradient(to bottom right, var(--main), var(--middle), var(--dark));
+  overflow-x: hidden;
+  transition: transform, 300ms ease-in-out;
+  padding-top: 60px;
+}
+.header-site-theme-p {
+    display: block;
+    margin: 0 auto;
+    margin-top: 1em;
+    color: var(--menuLink);
+    width: 6em;
+    white-space: nowrap;
+}
+.close-button {
+  position: absolute;
+  display: none;
+  right: 0;
+  background: transparent;
+  color: var(--menuLink);
+  border: none;
+  margin: 0;
+  padding: 0.5em 1em;
+  font-size: 2em;
+  cursor: pointer;
+}
+.close-button:hover {
+  color: var(--menuLinkHover);
+}
+.open-button {
+  position: fixed;
+  display: none;
+  top: 1em;
+  left: 1em;
+  width: 3em;
+  height: 3em;
+  font-size: 1.5em;
+  cursor: pointer;
+  background-color: rgba(0,0,0,0.05);
+  border-radius: 50%;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  z-index: 199;
+  transition: all 0.1s ease;
+}
+#carousel-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 30em;
+  background: var(--white);
+  min-height: 1px;
+}
+#content-wrapper {
+  position: relative;
+  overflow: visible;
+  float: left;
+  background: rgba(0,0,0,0.2);
+  width: 84%;
+  box-sizing:
+  border-box;
+  min-height: 1px;
+}
+#content {
+  width: 100%;
+  padding: 1em;
+  border-bottom-left-radius: 1em;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-flow: row wrap;
+  background: var(--container);
+  min-height: 1px;
+}
+#post-wrapper {
+  width: 76%;
+  padding-right: 0;
+  position: relative;
+  display: block;
+  background: var(--container);
+  min-height: 1px;
+}
+#sidebar-wrapper {
+  width: 24%;
+  display: block;
+  background: var(--container);
+  min-height: 1px;
+}
+#footer-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  background: transparent;
+  min-height: 1px;
+}
+#footer {
+  position: relative;
+  background: rgba(0,0,0,0.0);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 1em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  color: var(--menuLink);
+  box-sizing: border-box;
+  font-size: 2vh;
+}
+#footer a {
+  color: var(--link);
+  font-weight: 450;
+  text-decoration: none;
+  transition: color 300ms ease;
+}
+#footer a:hover {
+  color: var(--linkHover);
+}
+#footer span {
+  color: white;
+}
+.footer-img {
+  background-image: var(--logo-big);
+  background-size: cover;
+  width: 40vh;
+  height: 6vh;
+  margin: 0 auto;
+  transition: 300ms ease;
+}
+#slideshow {
+  margin-bottom: 2em;
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 1em;
+  box-shadow: 1px 2px 5px 0px var(--shadow);
+}
+#slideshow > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  overflow: hidden;
+}
+#slideshow > div > img {
+  width: 100%;
+}
+.sombra {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: fixed linear-gradient(to right bottom, var(--main), var(--middle), var(--dark));
+  opacity: 0.3;
+}
+.card {
+  position: relative;
+  display: inline-block;
+  margin-right: 1em;
+  margin-bottom: 1.3em;
+  width: 47.5%;
+  height: auto;
+  border-radius: 1em;
+  background: var(--wrapper);
+  box-shadow: 1px 2px 5px 0px var(--shadow);
+}
+.card-img {
+  top: 0;
+  left: 0;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  width: 100%;
+  opacity: 1;
+  transition: opacity 300ms ease;
+}
+.card-title {
+  margin: 0.9em;
+  color: var(--link);
+  transition: color 300ms ease;
+}
+.card-text {
+  padding-left: 1em;
+  padding-right: 1em;
+  color: var(--cardText);
+  min-height: 5em;
+  text-align: justify;
+}
+.card:hover {
+  cursor: pointer;
+}
+.card:hover .card-img {
+  opacity: 0.8;
+}
+.card:hover .card-title {
+  color: var(--linkHover);
+}
+.card-footer {
+  color: var(--light);
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-bottom: 0em;
+  font-size: 0.8em
+}
+.card-footer a {
+  color: var(--light);
+}
+.fa.fa-comments.fa-footer {
+  color: var(--light);
+  transition: color 300ms ease;
+}
+.card-footer a:hover {
+  color: var(--linkHover);
+}
+.card-footer:hover .fa.fa-comments.fa-footer {
+  color: var(--linkHover);
+}
+.card-footer.bottom {
+  margin-bottom: 1.5em;
+  margin-top: 0.5em;
+}
+.search {
+    position: relative;
+    display: flex;
+    width: 97.5%;
+    height: 3.4em;
+    border-radius: 1em;
+    background: var(--wrapper);
+    box-shadow: 1px 2px 5px 0px var(--shadow);
+    margin-bottom: 1em;
+}
+.search input[type=text] {
+    width: 87%;
+    height: 100%;
+    padding-left: 1em;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+    border: none;
+    font-size: 1em;
+    color: var(--link);
+    background: transparent;
+}
+.search input[type=text]::placeholder {
+  color: var(--light);
+}
+.search input[type=submit] {
+    width: 10%;
+    height: 100%;
+    float: right;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+    border: none;
+    font-size: 1em;
+    color: var(--link);
+    background: transparent;
+    transition: color 300ms ease;
+    cursor: pointer;
+}
+.search input[type=submit]:hover {
+  color: var(--menuLinkHover);
+}
+.status {
+  position: relative;
+  display: block;
+  width: auto;
+  height: 4em;
+  margin-top: 0.3em;
+  box-sizing: border-box;
+  border-radius: 0;
+  border: none;
+  background: transparent;
+  overflow: hidden;
+}
+.status.first {
+  margin-top: 0;
+}
+.status-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: fixed linear-gradient(to right bottom, var(--main), var(--middle), var(--dark));
+  opacity: 0.5;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.status:hover .status-gradient {
+  opacity: 0;
+}
+.status img {
+  width: 100%;
+  object-position: 0 -2em;
+}
+.status span {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: 0.8em;
+  margin-top: 0.8em;
+  width: 3.5em;
+  height: 3.5em;
+  line-height: 3.5em;
+  font-size: 0.8em;
+  text-align: center;
+  border-radius: 50%;
+  border: none;
+  color: var(--white);
+  font-weight: 450;
+  background: rgba(0, 0, 0, 0.4);
+}
+.status p {
+  position: absolute;
+  font-family: 'Ubuntu';
+  font-weight: bold;
+  left: 0.5em;
+  bottom: 0.9em;
+  padding: 0.1em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  margin-top: 0.8em;
+  border-radius: 1em;
+  font-size: 0.8em;
+  color: var(--white);
+  font-weight: 450;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+}
+.container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 0.3em;
+  margin-bottom: 1em;
+  box-sizing: border-box;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  background: var(--wrapper);
+  box-shadow: 1px 2px 5px 0px var(--shadow);
+}
+.container.searchBox {
+  width: 96%;
+  height: 4.3em;
+}
+.sidebar-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 0.3em;
+  margin-bottom: 1em;
+  box-sizing: border-box;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  background: var(--wrapper);
+  box-shadow: 1px 2px 5px 0px var(--shadow);
+}
+.sectionTitle {
+  position: relative;
+  display: inline-block;
+  width: 35%;
+  text-align: center;
+  color: var(--menuLink);
+  padding: 1em;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  font-weight: 450;
+  box-sizing: border-box;
+  background: var(--sectionTitle);
+  box-shadow: 0px 10px 16px var(--shadow);
+}
+.sectionTitle.searchBox {
+  width: 96%;
+}
+.wrapperTitle {
+  position: relative;
+  color: #A4C8DD;
+}
+hr {
+    height: 0.2em;
+    box-sizing: border-box;
+    border: none;
+    background: var(--postText);
+}
+.hr-titulo {
+    background: var(--postSection);
+}
+.splitter {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 0.5vh;
+  box-sizing: border-box;
+  background: var(--postSplitter);
+}
+.splitter.cards {
+  margin-bottom: 2em;
+}
+.splitter.post {
+  width: 94.5%;
+  margin-left: 1.2em;
+  background: var(--postSection);
+}
+#social-container {
+  width: 94.5%;
+  height: 3em;
+  margin: 1.2em;
+  margin-top: 2em;
+  padding-left: 0.3em;
+  background: transparent;
+}
+#comments-container {
+  width: 94.5%;
+  height: auto;
+  margin: 1.2em;
+  margin-top: 2em;
+  padding-left: 0.3em;
+  background: white;
+  border-radius: 1em;
+}
+.authorCircle {
+  height: 2em;
+  width: 2em;
+  background-image: url('https://c.disquscdn.com/uploads/users/20531/7584/avatar92.jpg?1610067421');
+  background-size: 100%;
+  border-radius: 50%;
+  border: solid 2px white;
+  display: inline-block;
+  vertical-align: middle;
+}
+.label {
+  display: inline-block;
+  background: #2AD2C9;
+  color: var(--socialButton);
+  font-size: 1em;
+  padding: 0.5em 1em;
+  margin-right: 0.5em;
+  width: auto;
+  font-weight: 600;
+  font-family: "Quicksand",sans-serif;
+  border-radius: 25px;
+  border: none;
+  overflow: hidden;
+  position: relative;
+}
+.button {
+  display: inline-block;
+  background: #2AD2C9;
+  color: var(--socialButton);
+  font-size: 12px;
+  padding: 1em 1.5em;
+  margin-right: 0.5em;
+  width: 18.5%;
+  font-weight: 600;
+  font-family: "Quicksand",sans-serif;
+  border-radius: 25px;
+  border: none;
+  overflow: hidden;
+  position: relative;
+  text-transform: uppercase;
+  transition: color, background-color 300ms ease;
+  cursor: pointer;
+}
+.button.download {
+    background: #007bff;
+    margin: 0 auto;
+    display: block;
+    width: auto;
+}
+.button.download:hover {
+    background: #0069d9;
+}
+.button.facebook {
+  background: var(--facebook);
+}
+.button.facebook:hover {
+  background: var(--facebookHover);
+}
+.button.twitter {
+  background: var(--twitter);
+}
+.button.twitter:hover {
+  background: var(--twitterHover);
+}
+.button.linkedin {
+  background: var(--linkedin);
+}
+.button.linkedin:hover {
+  background: var(--linkedinHover);
+}
+.button.whatsapp {
+  background: var(--whatsapp);
+}
+.button.whatsapp:hover {
+  background: var(--whatsappHover);
+}
+.button.reddit {
+  background: var(--reddit);
+}
+.button.reddit:hover {
+  background: var(--redditHover);
+}
+.menu {
+  padding: 0.3em;
+  padding-left: 1.5em;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  color: var(--menuLink);
+  background-color: transparent;
+  font-size: 1.1em;
+  font-weight: 450;
+  transition: all 300ms ease;
+  border-left: solid 0px var(--menuLink);
+}
+.menu:hover {
+  background-color: rgba(255,255,255,0.1);
+  color: var(--menuLinkHover);
+  padding-left: 1.8em;
+  cursor: pointer;
+}
+.menu.panel:hover {
+  background-color: transparent;
+}
+.menu-accordion {
+  padding: 0.3em;
+  padding-left: 1.5em;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  margin-bottom: 0;
+  color: var(--menuLink);
+  background-color: transparent;
+  font-size: 1.1em;
+  font-weight: 450;
+  transition: 0.4s ease;
+  border-left: solid 0px var(--menuLink);
+  cursor: pointer;
+}
+.menu-accordion-active, .menu-accordion:hover {
+  background-color: rgba(255,255,255,0.1);
+  color: var(--menuLinkHover);
+  padding-left: 1.8em;
+}
+.menu-panel {
+  background-color: rgba(255,255,255,0.1);
+  color: var(--menuLinkHover);
+  padding-left: 1.8em;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 300ms ease-out;
+}
+.post-container {
+  position: relative;
+  width: 98%;
+  height: auto;
+  margin-bottom: 1em;
+  box-sizing: border-box;
+  border-radius: 1em;
+  background: var(--wrapper);
+  box-shadow: 1px 2px 5px 0px var(--shadow);
+  overflow: hidden;
+  min-height: 100%;
+  padding-bottom: 1em;
+}
+.post-titulo {
+    color: var(--postSection);
+}
+.post-image {
+  position: relative;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  background-size: cover;
+  width: 100%;
+  height: 24.9em;
+}
+.post-shadow {
+  position: relative;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  background-image: url("https://izumiproject.com.br/images/slider/sombra.png");
+  background-size: auto 100%;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+}
+.post-info {
+  position: absolute;
+  display: inline-block;
+  color: white;
+  font-size: 1em;
+  z-index: 4;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  text-shadow: 2px 2px 2px black;
+}
+.post-title {
+  color: white;
+  font-size: 2em;
+  margin: 0.5em;
+  text-shadow: 2px 2px 2px black;
+}
+.post-author-avatar {
+  margin-left: 1.5em;
+  width:2em;
+  border-radius: 50%;
+  margin-bottom: -0.7em;
+}
+.post-tags {
+  color: white;
+  font-weight: 450;
+  font-size: 0.9em;
+  text-shadow: 2px 2px 2px black;
+  margin-left: 1.2em;
+}
+.post-info a {
+  color: white;
+  text-decoration: none;
+}
+.post-info a:hover {
+  color: white;
+  text-decoration: none;
+}
+.post-text {
+    padding-right: 2em;
+    padding-left: 2em;
+    padding-top: 0.5em;
+    color: var(--postText);
+}
+.post-text p {
+    text-align: justify;
+}
+.post-text img {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+}
+.post-text a {
+  color: var(--link);
+  text-decoration: none;
+  font-weight: 450;
+  transition: color 300ms ease;
+}
+.post-text a:hover {
+  color: var(--linkHover);
+}
+.pagination {
+  position: relative;
+  width: 97.5%;
+  display: inline-block;
+  text-align: center;
+  margin: 1em;
+  margin-left: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.pagination a {
+	font-family: 'Ubuntu';
+  margin-right: 0.5em;
+  color: var(--paginationText);
+  width: 3.5em;
+  height: 3.5em;
+  padding: 1em 1.3em;
+  line-height: 3.5em;
+  font-size: 0.8em;
+  font-weight: 450;
+  text-align: center;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--pagination);
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+.pagination a.active {
+  background-color: var(--paginationActive);
+  color: var(--paginationTextHover);
+}
+.pagination a:hover:not(.active) {
+  color: white;
+  background-color: var(--paginationNotActive);
+}
+.icon-container {
+  display: flex;
+  width: 100%;
+  padding: 0.3em;
+  padding-left: 1.5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  color: var(--menuLink);
+  background-color: transparent;
+  font-size: 1.1em;
+  font-weight: 450;
+  transition: 0.4s ease;
+  border-left: solid 0px var(--menuLink);
+}
+.icon-infoanime {
+  width: 1.5em;
+  height: 1.5em;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  background-image: var(--icon-infoanime);
+  background-size: 100% 100%;
+  transition: 0.3s ease;
+}
+.icon-infoanime:hover {
+  background-image: url("https://izumiproject.com.br/images/global/icon_infoanime.png");
+}
+.icon-anidb {
+  width: 1.9em;
+  height: 1.5em;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  background-image: var(--icon-anidb);
+  background-size: 100% 100%;
+  margin-left: 0.5em;
+  transition: 0.3s ease;
+}
+.icon-anidb:hover {
+  background-image: url("https://izumiproject.com.br/images/global/icon_anidb.png");
+}
+/*slider switch css */
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+
+  em {
+    margin-left: 1.5em;
+    font-size: 1rem;
+  }
+}
+.theme-switch {
+    display: block;
+    height: 2em;
+    margin: 0 auto;
+    position: relative;
+    width: 3.7em;
+}
+
+.theme-switch input {
+  display:none;
+}
+
+.switcher {
+  background-color: transparent;
+  border: solid 0.1em var(--menuLink);
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.3s ease;
+}
+
+.switcher:before {
+  background-color: var(--menuLink);
+  bottom: 0.1em;
+  content: "";
+  height: 1.6em;
+  width: 1.7em;
+  left: 0.05em;
+  position: absolute;
+  transition: 0.3s ease;
+}
+
+input:checked + .switcher {
+  background-color: transparent;
+}
+
+input:checked + .switcher:before {
+  transform: translateX(1.67em);
+}
+
+.switcher.round {
+  border-radius: 1em;
+}
+
+.switcher.round:before {
+  border-radius: 50%;
+}
+
+table {
+    border-collapse: collapse;
+    border-radius: 1em;
+    overflow: hidden;
+    width: 100%;
+    background: var(--wrapper);
+    box-shadow: 1px 2px 5px 0px var(--shadow);
+    font-size: 0.85em;
+    text-align: center;
+    color: var(--postText);
+    table-layout: fixed;
+}
+table th {
+    color: var(--menuLink);
+    background: var(--middle);
+    padding: 1em;
+    text-transform: uppercase;
+}
+table th:nth-child(odd) {
+    background: var(--main);
+}
+
+table tr:nth-child(odd) {
+    background: var(--container);
+}
+table tr {
+    color: var(--postText);
+    background: var(--wrapper);
+}
+table td {
+    padding: 1em;
+}
+
+@media screen and (max-width: 768px) {
+
+  body {
+    font-size: 1em;
+  }
+  #sideheader {
+    display: grid;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+  }
+  .close-button {
+    display: block;
+   	z-index: 90;
+   	margin: 0.3em;
+   	transition: all 300ms ease-in-out;
+  }
+  .open-button {
+    display: inherit;
+    top: 0;
+    margin: 0.5em;
+    z-index: 2000;
+    left: unset;
+	right: 0;
+	opacity: 1;
+	transition: all 300ms ease-in-out;
+    
+  }
+  #wrapper {
+    display: block;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 1em;
+  }
+  #header-wrapper, #header {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0.5em;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 90;
+    overflow-y: scroll;
+    transition: all 300ms ease-in-out;
+  }
+  #header {
+    background: rgba(0,0,0,0.70);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding-bottom: 2em;
+
+  }
+  #logo {
+      margin-top: 1.5em;
+  }
+  .slider > .slide-description {
+    width: 100%;
+    left: 0;
+  }
+  .slider > .slide-description > label > .text-slide {
+    font-size: 2em;
+  }
+  #sidebar-wrapper {
+    width: 100%;
+  }
+  #content-wrapper {
+    width: 100%;
+  }
+  #content {
+    padding: 0.5em;
+    display: block;
+    box-sizing: border-box;
+  }
+  .search {
+    width: 100%;
+  }
+  .search input[type=text] {
+    padding: 0;
+    padding-left: 1em;
+    width: 75%;
+  }
+  .search input[type=submit] {
+    width: 20%;
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+  #post-wrapper {
+    width: 100%;
+  }
+  .post-container {
+    width: 100%;
+  }
+  .post-image {
+    min-height: auto;
+    height: 30em;
+    background-position-x: 50%;
+  }
+  .post-shadow {
+    opacity: 1;
+  }
+  .post-info {
+    bottom: 0;
+    height: auto;
+  }
+  .post-tags {
+    display: block;
+    margin-bottom: 1em;
+    margin-left: 1.3em;
+  }
+  .post-text {
+      padding-right: 1em;
+      padding-left: 1em;
+      padding-top: 0;
+  }
+  .post-text img {
+    width: 100%;
+  }
+  .splitter.post {
+    width: 87.5%;
+  }
+  .card {
+    width: 100%;
+    height: auto;
+  }
+  .pagination {
+    margin: 0.5em;
+  }
+  #comments-container {
+    margin: 0;
+    margin-top: 1em;
+    margin-left: 0.5em;
+  }
+  #social-container {
+    height: auto;
+    padding-left: 20%;
+  }
+  .button.facebook, .button.twitter, .button.linkedin, .button.whatsapp, .button.reddit {
+    margin-right: 0;
+    margin-bottom: 1em;
+    width: 50%;
+  }
+  table {
+        table-layout: fixed;
+        overflow-x: auto;
+        display: block;
+    }
+}

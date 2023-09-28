@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Página não encontrada | Izumi✰Project</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" >
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="https://izumiproject.com.br/images/global/favicon.png">
+<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+<link href='https://izumiproject.com.br/style.css' rel='stylesheet' type="text/css">
+<style type="text/css">
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    color: white;
+}
+body {
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 12%;
+    padding-bottom: 12%;
+}
+</style>
+</head>
+
+<body>
+    <center>
+        <a href="https://izumiproject.com.br/"><div id="logo"></div></a>
+        <h1><b>Erro 404: Página não encontrada! :(</b></h1>
+        <p>
+            Se você acredita que algo deveria estar aqui, entre em contato conosco e nos informe o problema! Administradores atenciosos irão consertá-lo com mágica para você! (っ•́｡•́)⊃━☆ﾟ.*･｡♡ 
+        <br /><br />contato@izumiproject.com.br
+        </p>
+    </center>
+    <script type="text/javascript">
+        var images = [];
+        function preload() {
+            for (var i = 0; i < arguments.length; i++) {
+                images[i] = new Image();
+                images[i].src = preload.arguments[i];
+            }
+        }
+        preload(
+            "https://izumiproject.com.br/images/global/logo_small_white.png",
+            "https://izumiproject.com.br/images/global/logo_small_dark.png",
+            "https://izumiproject.com.br/images/global/logo_small.png",
+            "https://izumiproject.com.br/images/global/logo_big_white.png",
+            "https://izumiproject.com.br/images/global/logo_big_dark.png",
+            "https://izumiproject.com.br/images/global/icon_infoanime_dark.png",
+            "https://izumiproject.com.br/images/global/icon_anidb_dark.png",
+            "https://izumiproject.com.br/images/global/icon_anidb.png",
+            "https://izumiproject.com.br/images/global/icon_anidb_white.png",
+            "https://izumiproject.com.br/images/global/icon_infoanime.png",
+            "https://izumiproject.com.br/images/global/icon_infoanime_white.png",
+            "https://izumiproject.com.br/images/global/icon_cc-by-nc-sa.png",
+            "https://izumiproject.com.br/images/global/icon_cc-by-nc-sa_white.png",
+            "https://izumiproject.com.br/images/global/mega.png",
+            "https://izumiproject.com.br/images/global/patch.png",
+            "https://izumiproject.com.br/images/global/torrent.png"
+        );
+    </script>
+</body>
+</html>
